@@ -1,0 +1,77 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kumarjit">
+
+    <!-- Permissions for internet and network (required for ads) -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Storage permissions for saving screenshots -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <application
+        android:allowBackup="true"
+        android:label="SecureSPY"
+        android:theme="@style/Theme.InsecureDemo">
+
+        <!-- AdMob App ID metadata -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+
+        <!-- Main launcher activity -->
+        <activity
+            android:name="com.example.kumarjit.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- PIN input screen -->
+        <activity
+            android:name="com.example.kumarjit.PinActivity"
+            android:exported="false" />
+
+        <!-- Access screen shown after PIN -->
+        <activity
+            android:name="com.example.kumarjit.AccessActivity"
+            android:exported="true"
+            android:label="Access" />
+
+        <!-- Admin-only screen (for demonstration) -->
+        <activity
+            android:name="com.example.kumarjit.AdminActivity"
+            android:exported="false" />
+
+        <!-- Snake game activity -->
+        <activity
+            android:name="com.example.kumarjit.SnakeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Final Score screen -->
+        <activity
+            android:name="com.example.kumarjit.FinalScoreActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Fake Payment Form screen -->
+        <activity
+            android:name="com.example.kumarjit.FakePaymentActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Paytm Payment Confirmation screen -->
+        <activity
+            android:name="com.example.kumarjit.PaytmPaymentActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

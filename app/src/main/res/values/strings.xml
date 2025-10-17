@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="amount">Amount</string>
+    <string name="generate_paytm">Generate Paytm</string>
+    <string name="name_of_receiver">Name of Receiver</string>
+</resources>

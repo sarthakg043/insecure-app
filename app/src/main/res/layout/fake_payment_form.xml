@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <EditText
+        android:id="@+id/edit_account_name2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="28sp"
+        android:hint="@string/name_of_receiver"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="24sp"
+        android:hint="@string/amount"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:drawable/edit_text" />
+
+    <Button
+        android:id="@+id/button_generate_paytm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@color/blue"
+        android:text="@string/generate_paytm"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:padding="12dp" />
+
+</LinearLayout>

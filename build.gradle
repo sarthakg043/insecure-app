@@ -1,0 +1,12 @@
+// Top-level build file (minimal placeholder)
+// build.gradle (Project)
+// Top-level build.gradle
+
+// No repositories here anymore
+plugins {
+    id 'com.android.application' version '8.12.3' apply false
+    id 'com.android.library' version '8.12.3' apply false
+    id 'org.jetbrains.kotlin.android' version '1.9.22' apply false
+}
+
+

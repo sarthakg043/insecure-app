@@ -1,0 +1,14 @@
+<resources>
+    <!-- Primary colors -->
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+
+    <!-- Common colors -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="cyan">#00FFFF</color>
+    <color name="magenta">#FF00FF</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="blue">#0000FF</color>
+</resources>

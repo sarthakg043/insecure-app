@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111111"
+    android:padding="16dp">
+
+    <!-- Score -->
+    <TextView
+        android:id="@+id/tvScore"
+        android:text="Score: 0"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Snake game area -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.example.kumarjit.SnakeView
+            android:id="@+id/snake_game_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#222222"/>
+    </FrameLayout>
+
+    <!-- Quit button -->
+    <Button
+        android:id="@+id/btnQuit"
+        android:text="Quit Game"
+        android:backgroundTint="#FF5722"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Ad banner -->
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewSnake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
+</LinearLayout>

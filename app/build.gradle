@@ -1,0 +1,56 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace "com.example.kumarjit"
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.kumarjit"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    // Kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.22"
+
+    // AndroidX libraries
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
+    implementation 'com.google.android.material:material:1.11.0'
+
+    // SQLCipher for Android
+    implementation 'net.zetetic:android-database-sqlcipher:4.5.3'
+    implementation 'androidx.sqlite:sqlite:2.3.0'
+    implementation 'androidx.sqlite:sqlite-framework:2.3.0'
+
+    // PinView
+    implementation 'com.github.GoodieBag:Pinview:v1.5'
+
+    // ads
+    implementation 'com.google.android.gms:play-services-ads:22.3.0'
+
+}
+
+// Repositories if not in project-level build.gradle
+
