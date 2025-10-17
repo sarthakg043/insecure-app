@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
+
     <!-- Storage permissions for saving screenshots -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="28" />
@@ -14,7 +15,7 @@
 
     <application
         android:allowBackup="true"
-        android:label="SecureSPY"
+        android:label="Secure Game"
         android:theme="@style/Theme.InsecureDemo">
 
         <!-- AdMob App ID metadata -->
